@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musik-Slot-Generator</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div class="container">
+        <h1>Musik-Slot-Generator</h1>
+
+        <div class="genre-container">
+            <label for="genreInput">Genre:</label>
+            <input type="text" id="genreInput" placeholder="z.B. Techno, House...">
+            <button id="randomGenreBtn">Zufall</button>
+        </div>
+
+        <div class="slot-machine">
+            <div class="reel-container">
+                <div class="reel" id="keyReel">
+                    </div>
+            </div>
+
+            <div class="reel-container">
+                <div class="reel" id="scaleReel">
+                    </div>
+            </div>
+
+            <div class="reel-container">
+                <div class="reel" id="bpmReel">
+                    </div>
+            </div>
+        </div>
+
+        <button id="spinBtn">Drehen!</button>
+
+        <div class="current-selection">
+            <p>Aktuelle Auswahl:</p>
+            <p>Tonart: <span id="currentKey"></span></p>
+            <p>Skala: <span id="currentScale"></span></p>
+            <p>BPM: <span id="currentBPM"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>
